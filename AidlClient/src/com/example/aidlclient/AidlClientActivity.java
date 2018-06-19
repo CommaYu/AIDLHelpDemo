@@ -16,7 +16,7 @@ import android.widget.Toast;
 import com.example.aidlhelper.aidl.IPersonAidl;
 import com.example.aidlhelper.aidl.Person;
 
-public class MainActivity extends Activity {
+public class AidlClientActivity extends Activity {
     private Button btn_one;
 
     private IPersonAidl iPersonAidl;
@@ -56,9 +56,9 @@ public class MainActivity extends Activity {
                     person.setAge(18);
                     // 从服务端获取数据。但是如何写回调，把数据外抛给客户端呢？
                     String retVal = iPersonAidl.dealPersonFromServer(person);
-                    Toast.makeText(MainActivity.this, retVal, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AidlClientActivity.this, retVal, Toast.LENGTH_SHORT).show();
                 } catch (RemoteException e) {
-                    Toast.makeText(MainActivity.this, "error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AidlClientActivity.this, "error", Toast.LENGTH_SHORT).show();
                 }
             }
         });
