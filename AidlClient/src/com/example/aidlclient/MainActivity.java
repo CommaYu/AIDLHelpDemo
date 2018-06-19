@@ -24,7 +24,6 @@ public class MainActivity extends Activity {
 
         @Override
         public void onServiceDisconnected(ComponentName arg0) {
-            // TODO Auto-generated method stub
         }
 
         @Override
