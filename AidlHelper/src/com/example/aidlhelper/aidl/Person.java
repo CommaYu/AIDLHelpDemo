@@ -48,7 +48,7 @@ public class Person implements Parcelable {
 	}
 	// --->
 
-	/* 自动生成的内容 。Eclipse中快捷键alt+shift+s,然后Generate Getters and Setters*/ 
+	/* 自动生成的内容 */ 
 	public String getName() {
 		return name;
 	}
